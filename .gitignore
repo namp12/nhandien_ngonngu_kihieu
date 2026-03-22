@@ -1,0 +1,36 @@
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+# Bỏ qua dữ liệu thô cực nặng (Nếu bạn đã có bản backup)
+dataset/
+reference_videos/
+
+# Bỏ qua các file dữ liệu trung gian lớn (có thể tạo lại bằng script)
+models/landmarks_mp.csv
+models/*.npy
+!models/asl_static_mp.h5
+!models/asl_dynamic_lstm.h5
+!models/hand_landmarker.task
+!models/*.pkl
+!models/*.json
+
+# Logs
+*.log
+asl_webcam_debug.webp
+asl_webcam_v2_verify.webp
+
+# Temp
+/tmp/
